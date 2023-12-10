@@ -1,0 +1,106 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background: rgb(170, 77, 77) url(../assets/firefox_logo-only_RGB-400w.png) 50% 50% no-repeat fixed;
+    text-align: center;
+}
+
+
+body {
+    font-size: 20px;
+    color: black;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+}
+
+
+article {
+    flex: 4;
+}
+
+main * {
+    margin: 0 30px;
+    margin-top: 70px;
+}
+
+
+footer {
+    margin-top: 200px;
+    border-top: solid black;
+    height: 400px;
+    padding-top: 170px;
+}
+
+nav {
+    height: 70px;
+    background-color: #db8420;
+    display: flex;
+  }
+  nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+  }
+  nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+  }
+  nav a {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+  }
+  nav form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2em;
+  }
+  input {
+    font-size: 1.2rem;
+    height: 32px;
+  }
+  
+  input[type="search"] {
+    flex: 1;
+    border-radius: 5px;
+    transition: 1s;
+  }
+  input[type="search"]:focus {
+    flex: 4;
+  }
+  
+  input[type="submit"] {
+    flex: 1;
+    margin-left: 0.7rem;
+    background: #db8420;
+    border-radius: 20px;
+    color: white;
+    transition: 0.2s;
+  }
+  
+input[type="submit"]:active {
+  font-size: 0.7em;
+}
+
+aside {
+    flex: 1;
+    text-align: left;
+    background-color: rgb(167, 136, 78);
+    display: block;
+    margin: 0 auto;
+}
+
+.copyright-ul {
+	list-style-type: none;
+}
