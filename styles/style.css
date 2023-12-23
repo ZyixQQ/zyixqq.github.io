@@ -1,105 +1,467 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
-}
-html {
-    background: rgb(170, 77, 77) url(../assets/firefox_logo-only_RGB-400w.png) 50% 50% no-repeat fixed;
-    text-align: center;
-}
-
-
-body {
-    font-size: 20px;
-    color: black;
-    margin: 0 auto;
-}
-
-main {
-    display: flex;
-}
-
-
-article {
-    flex: 4;
-}
-
-main * {
-    margin: 0 30px;
-    margin-top: 70px;
-}
-
-
-footer {
-    margin-top: 200px;
-    height: 400px;
-    padding-top: 170px;
-}
-
-nav {
-    height: 70px;
-    background-color: #db8420;
-    display: flex;
-  }
-  nav ul {
-    padding: 0;
-    list-style-type: none;
-    flex: 2;
-    display: flex;
-  }
-  nav li {
-    display: inline;
-    text-align: center;
-    flex: 1;
-  }
-  nav a {
-    display: inline-block;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-  }
-  nav form {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 0 2em;
-  }
-  input {
-    font-size: 1.2rem;
-    height: 32px;
-  }
-  
-  input[type="search"] {
-    flex: 1;
-    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 1s;
-  }
-  input[type="search"]:focus {
-    flex: 4;
-  }
-  
-  input[type="submit"] {
-    flex: 1;
-    margin-left: 0.7rem;
-    background: #db8420;
-    border-radius: 20px;
-    color: white;
-    transition: 0.2s;
-  }
-  
-input[type="submit"]:active {
-  font-size: 0.7em;
 }
 
-aside {
-    flex: 1;
-    text-align: left;
-    background-color: rgb(167, 136, 78);
-    display: block;
-    margin: 0 auto;
+@layer desktops {
+    :root {
+        --background-linear: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(140,222,115,1) 100%);
+        --background-color: rgb(214, 214, 214);
+        --text-color: black;
+        --link-color: rgb(0, 0, 255);
+        --nav-link-hover-color: #42424265;
+        --nav-link-color: black;
+    }
+    body.dark-theme {
+        --background-linear: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(19,13,135,1) 100%);
+        --background-color: #424242;
+        --text-color: white;
+        --link-color: rgb(32, 129, 37);
+        --nav-link-hover-color: rgba(255, 255, 255, 0.466);
+        --nav-link-color: rgb(240, 236, 236);
+    }
+
+    body {
+        background: var(--background-linear);
+        color: var(--text-color);
+        transition: none;
+      }
+    h3, h2, h1, .head-links {
+        color: var(--text-color)
+    }
+
+    i {
+        color: var(--text-color);
+    }
+
+    a {
+        color: var(--link-color);
+        padding: 10px;
+    }
+
+    .aside-links:hover {
+        text-decoration: none;
+    }
+
+    body {
+        text-align: center;
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+    }
+
+    header {
+        margin: 0 0;
+        font-family: 'Rubik Bubbles';
+        font-size: 50px;
+        animation: fadeIn 2s ease-in-out forwards;
+        
+    }
+    aside {
+        animation: rightToL 1s ease-in-out forwards;
+    }
+
+
+    .container {
+        display: flex;
+        background-color: transparent;
+        border-top: 5mm ridge rgb(238, 120, 120);
+
+    }
+
+    
+
+    #main-heading {
+        user-select: none;
+    }
+
+    main, nav, .nav-list{
+        display: flex;
+        animation: slideIn 1s ease-in-out forwards;
+    }
+
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav-list {
+        margin: 20px;
+        list-style-type: none;
+    }
+
+    .nav-link-wrapper {
+        padding: 0 20px;
+    }
+
+    .nav-seperator {
+        margin: 0;
+        width: 3px;
+        border-radius: 30%;
+        border: none;
+        background-color: var(--nav-seperator-color);
+        animation: slideIn 1.5s ease-out;
+    }
+    
+
+    .nav-link {
+        text-decoration: none;
+        user-select: none;
+        color: var(--nav-link-color);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+
+    .nav-link:hover {
+        border-radius: 10px;
+        background-color: var(--nav-link-hover-color);
+    }
+
+
+    #search-form {
+        text-align: right;
+        float: right;
+        padding: 5px;
+        position: relative;
+        
+    }
+    .header-search {
+        animation: rightToL 1s ease-in-out forwards;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .left-side {
+        display: inline-flex;
+    }
+
+    .header-search  {
+        border: 2px solid;
+        border-radius: 30px;
+        margin: auto 20px
+    }
+
+    .seperator {
+        border: 2px solid;
+        border-radius: 10px;
+    }
+
+    .vertical {
+        margin: 40px 10px;
+    }
+    
+    #nav-search {
+        border-radius: 5px;
+        width: 70px;
+        height: 30px;
+        transition: 0.4s ease-in-out; 
+        border: none;
+        background-color: transparent;
+        font-size: 1rem;
+        padding: 0 10px;
+        color: var(--text-color);
+    }
+    
+    #nav-search:focus {
+        width: 10vw;
+        outline: none;
+    }
+
+    #submit-button {
+        border: none;
+        background-color: initial;
+        cursor: pointer;
+        font-size: 1em;
+    }
+
+    #submit-button:hover {
+        text-shadow: 0px 0px 3px var(--text-color);
+    }
+
+
+
+    article {
+        padding: 70px;
+        font-size: 20px;  
+        text-align: left;  
+    }    
+
+    aside {
+        padding: 30px;
+        text-align: left;
+        width: 20vw;
+    }
+
+    footer {
+        position: relative;
+        padding: 2rem 1rem;
+        
+    }
+
+    #footer-main-logo {
+        padding: 0 0 8px 0;
+        font-size: 1.5rem;
+    }
+    
+    .footer-list {
+        list-style-type: none;
+    }
+
+    .footer-nav-link  {
+        color: var(--text-color);
+        text-decoration: none;
+        padding: 0;
+        font-size: 1.3rem;
+    }
+
+    .footer-wrapper {
+        display: grid;
+        gap: 5rem;
+        grid-template-areas: "logo nav1 nav2 nav3 nav4";
+        grid-template-columns: minmax(260px,2fr) repeat(4,minmax(0,1fr));
+        margin: 0 25px;
+    }
+
+    .footer-list, .footer-header {
+        text-align: left;
+        padding: 0 0 8px;
+        margin: 0;
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .footer-header {
+        font-size: 1.5rem;
+    }
+
+    .icon {
+        font-size: 30px;
+        padding: 0;
+    }
+    .license {
+        margin: 0;
+        margin-top: 80px;
+    }
+
+    .footer-logo-col-1 {
+        text-align: left;
+    }
+
+
+
+    .footer-logo-col-1 p {
+        grid-area: logo;
+        margin: 0 0 20px 0;
+        font-size: 20px;
+    }
+
+    .footer-nav-col1 {
+        grid-area: nav1;
+    }
+
+    .footer-nav-col2 {
+        grid-area: nav2;
+    }
+
+    .footer-nav-col3 {
+        grid-area: nav3;
+    }
+
+    .footer-nav-col4 {
+        grid-area: nav4;
+    }
+
+
+    .icon-list {
+        list-style-type: none;
+        display: flex;
+        gap: 2rem;
+        text-align: left;
+        padding: 0 0 8px;
+        margin: 0;
+    }
+
+    .icon {
+        text-decoration: none; /* Link altı çizgisi kaldırma */
+        color: inherit; /* Link rengini kalıtım al */
+        display: inline-block; /* Linki blok elemente çevirme */
+        position: relative; 
+      }
+
+
+    .even-element {
+        animation: rightToL 1s;
+    }
+
+    .odd-element {
+        animation: leftToR 1s;
+    }
+
+    .head-links:hover {
+        text-decoration: underline;
+    }
+
+        .head-links {
+            padding-left: 1em;
+            font-size: 40px;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .head-links:before {
+            content: '#';
+            color: grey;
+            font-size: .8em;
+            text-decoration: none;
+            display: inline-block;
+            visibility: hidden;
+        }
+
+        .head-links:hover::before {
+            visibility: visible;
+        }
+
+
+    .soft-keywords {
+        color: #4400c4;
+    }
+
+    .function-name {
+        color: rgb(167, 19, 19);
+    }
+    
+    ::-webkit-scrollbar {
+        width: .3vw;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent; 
+    }
+      
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #888;
+    }
+      
+    ::-webkit-scrollbar-track {
+        width: 2px;
+        background-color: rgba(0, 0, 0, 0); /* Tamamen şeffaf arka plan */
+    }
+    ::-webkit-search-cancel-button {
+        cursor: pointer;
+
+    }
+
+    #search-main {
+        display: flex;
+        flex-direction: column;
+    }
+    #search-main-form {
+        display: flex;
+        gap: 0;
+        width: 100%;
+        position: relative;
+        box-sizing: border-box;
+        border-width: 5px;
+    }
+
+
+    #main-search {
+        font-size: 1.3rem;
+        padding: 2rem;
+        border-radius: 50px;
+        width: 100%;
+        box-sizing: border-box;
+        border-color: rgb(224, 222, 222);
+    }
+
+    #main-search:focus {
+        border-color: black;
+        box-shadow: 0 0 0 3px rgba(0, 0, 0);
+    }
+
+    #main-submit {
+        height: 100%;
+        left: auto;
+        position: absolute;
+        right: 1.5rem;
+        top: 0;
+        border: none;
+        background-color: transparent;
+        text-transform: none;
+        cursor: pointer;
+        font-size: 1.5em;
+    }
+
+    #main-submit:hover {
+        opacity: 0.7;
+    }
+
+    ::-webkit-search-cancel-button {
+        display: none;
+    }
+
+    .search-wrapper {
+        align-self: center;
+        display: flex;
+        max-height: 4rem;
+        max-width: 40rem;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes slideIn {
+        from {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    @keyframes rightToL {
+        from {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    @keyframes leftToR {
+        from {
+            transform: translateX(-100px);
+            
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+
+            opacity: 1;
+        }
+    }
 }
 
-.copyright-ul {
-	list-style-type: none;
-}
+

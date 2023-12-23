@@ -3,57 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css" type="text/css" />
     <title>Zyix QQ</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Bubbles" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>HEADER</h1>
+        <h1 id="main-heading">
+            Zyix QQ
+        </h1>
+        
     </header>
+
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-			<li><a href='planet-stats.html'>Planet Stats</a><li>
+        <ul class="nav-list">
+            <li class="nav-link-wrapper" ><a class="nav-link" href="main.html" > HOME      </a></li>
+            <hr class="nav-seperator" />
+            <li class="nav-link-wrapper" ><a class="nav-link" href="#" > OUR TEAMS </a></li>
+            <hr class="nav-seperator" />
+            <li class="nav-link-wrapper" ><a class="nav-link" href="#" > PROJECTS  </a></li>
+            <hr class="nav-seperator" />
+            <li class="nav-link-wrapper" ><a class="nav-link" href="#" > APIs      </a></li>
+            <hr class="nav-seperator" />
+            <li class="nav-link-wrapper"> <a class="nav-link" href="#" > SOURCE    </a></li>
+            <hr class="nav-seperator" />
+            <li class="nav-link-wrapper"> <a class="nav-link" id="themeButton">Theme</a></li>
         </ul>
-
-        <form>
-            <input type="search" name="q" placeholder="Search Here">
-            <input type="submit" value="GO">
+        <div class="header-search">
+        <form action="#" id="search-form" autocomplete="off">
+            <input id="nav-search" type="search" name="q" placeholder="Search" onfocus="changePlaceholder(this)" onblur="resetPlaceholder(this)" />
+            <button id="submit-button" type="submit">
+                <i class="fas fa-magnifying-glass"></i>
+            </button>
         </form>
-    </nav>
 
-    <main>
-        <aside id="a1">
+    </div>
+    </nav>
+    
+    <div class="container">
+    <div class="main-wrapper">
+        <main>
+            <article>
+            <a id="introduction-link" href="#introduction-link" class="head-links">Introduction</a>
+            <hr class="seperator" />
+            <p class="odd-element">
+                Hi, I am zyix 
+                I will talk about myself throughout this article.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Aperiam odio consectetur amet atque iure sapiente dolorem sed quia magnam velit rem laboriosam at nihil hic distinctio, laudantium quod eos error.
+                Corrupti unde assumenda nihil voluptate sapiente voluptatem veniam fugiat accusantium. Consequuntur aliquam, laborum fugit labore molestiae enim nam voluptate eligendi distinctio aperiam voluptatibus repellendus, voluptates accusamus deleniti repellat asperiores possimus.
+            </p>
+                <ul class="odd-element">
+                    <li>Hello</li>
+                    <li>Goodbye</li>
+                    <li>Exapmle</li>
+                    <li>Nowadayws</li>
+                    <li><i class="fa fa-bars"></i></li>
+                    <li><i class="fa fa-cog"></i></li>
+                    <li>Somtihgn</li>
+                </ul>
+                
+            <p class="even-element">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam aperiam temporibus odio tenetur harum blanditiis mollitia quod architecto quia, repudiandae recusandae libero consectetur animi incidunt optio quaerat nemo illum!
+                Asperiores odio officia ad? Aut labore possimus nihil eaque est temporibus pariatur commodi animi adipisci nesciunt eius earum laudantium rerum placeat quo aperiam, velit fugit sint illo nobis nisi itaque.
+                Eaque reiciendis repellat impedit temporibus, veritatis quod accusamus molestias, delectus aut incidunt eius deleniti omnis iusto, perferendis facilis. Dolorum delectus quidem labore, id asperiores illo cupiditate dolor quaerat quibusdam molestiae.
+                Dignissimos, mollitia harum tenetur atque unde sed culpa ipsum autem laboriosam officiis ducimus itaque quod a voluptas accusamus vel ea labore neque recusandae odit? Nihil saepe molestiae necessitatibus accusantium laudantium!
+                Accusamus temporibus error doloremque! Deserunt nam quidem voluptatum dolor aspernatur nisi laboriosam iusto recusandae optio repellendus magnam dolores provident inventore odit quisquam incidunt pariatur, rerum eligendi assumenda velit modi numquam.
+                Ipsum non accusantium, earum doloremque corrupti accusamus obcaecati, doloribus molestias similique saepe officia temporibus sunt eius eaque ab ipsa quam dolorum rerum. Consequuntur fugiat saepe recusandae ratione. Rem, exercitationem odit?
+                Reprehenderit, vero velit autem modi officiis architecto hic natus iure ex delectus quidem totam deserunt veniam vel molestiae voluptatum ducimus omnis ut dolores ullam officia commodi expedita dolor! Inventore, impedit.
+                Distinctio, error veniam iure impedit repellendus in beatae animi totam esse eius repudiandae voluptates rem commodi nemo numquam earum provident adipisci modi nisi obcaecati eos delectus facilis. Labore, amet corporis?
+                Ipsa nulla voluptas aliquid reiciendis, minus consectetur provident magnam ratione tempore accusamus quaerat nobis id voluptates corrupti dolore in ducimus rerum alias perferendis officiis quisquam labore dolorem quasi! Esse, facere?
+                Natus, eaque nostrum possimus molestias maiores minima deserunt autem, voluptatem eius necessitatibus vel corporis aperiam placeat perspiciatis sequi ipsam quas. Accusamus amet, impedit nobis dolorem similique ullam ducimus nisi veritatis!
+            </p>
+            <p class="odd-element">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque dolorum facere quia ullam autem eligendi rerum veniam asperiores itaque quaerat, nihil laudantium ab maxime voluptas voluptatem praesentium minima numquam eaque.
+                Sint, atque? Fugiat, blanditiis quisquam temporibus ipsum suscipit possimus itaque quo minus modi, accusantium reiciendis! Voluptas unde beatae quod, nisi reiciendis dolor ex inventore quo, ea nobis quam, enim magni!
+                Nesciunt, aut tenetur! Porro voluptatem accusantium quibusdam ducimus, laudantium minus, deserunt dolore temporibus, iste laboriosam velit fugiat omnis facilis iusto facere magni vitae quae dolorum provident. Placeat praesentium repudiandae adipisci.
+                Ab dolorum rem illo nesciunt eveniet dignissimos ad placeat hic magnam sed tenetur in ipsam molestiae sint explicabo nulla dolore a porro quasi obcaecati, perspiciatis optio aut? Quo, dicta corrupti?
+                Repellat officiis voluptates expedita quibusdam nobis vitae pariatur ipsum quod voluptatem. Quasi sequi odio similique nostrum non assumenda quia culpa officiis adipisci repellat obcaecati sit rem placeat harum, enim fuga!
+                <br />
+                <br />
+                Quaerat ducimus inventore voluptatibus nam accusamus. Illum magni officiis totam corporis. Iste ipsa, consectetur veniam modi aliquam sequi, quas eum nihil impedit officiis perspiciatis accusantium ducimus? Ipsum dolorem sequi sunt?
+                Assumenda at provident saepe in quae porro placeat natus possimus quia ullam autem quam dolorem, consequuntur praesentium reprehenderit perspiciatis voluptatibus inventore quis eos quibusdam iure dolore. Nesciunt maiores fugit non?
+                Vero explicabo assumenda voluptatem tempore non mollitia facere adipisci quod nostrum. Quibusdam dolor architecto, veritatis ea consectetur velit sit magni nulla aperiam dignissimos, nemo nesciunt dolore sunt voluptatibus obcaecati voluptas?
+                Hic placeat inventore quis sit corrupti unde odio velit numquam quos necessitatibus in natus itaque illo excepturi, molestias facilis omnis dolorum asperiores? Minus eligendi sint perspiciatis possimus similique. Nihil, repudiandae?
+                Deserunt tempore ex a exercitationem eveniet in voluptatibus ad nisi distinctio esse quo odio vero modi, aperiam debitis minus corrupti omnis labore sed nesciunt nam praesentium unde eum sapiente. Odit.
+            </p>
+            <br />
+            <a id="lets-start" href="#lets-start" class="head-links">Lets Start</a>
+            <p class="even-element">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam incidunt dicta soluta deserunt impedit eveniet nam voluptatem, ut iusto expedita debitis exercitationem repudiandae esse laudantium magni, eius magnam culpa quaerat.
+                Autem nostrum eos alias commodi cum reprehenderit adipisci quod laudantium. Sunt, est? Magnam ullam necessitatibus quisquam, reprehenderit quae atque asperiores quibusdam nesciunt. Nobis aspernatur voluptatibus iure pariatur ea rerum similique!
+                Expedita, neque optio consequuntur consectetur doloribus incidunt consequatur illo, porro rerum ab praesentium, tempora blanditiis nulla. Expedita nobis, fugiat praesentium consequatur laudantium ratione dolores optio illo recusandae perferendis. Commodi, cumque.
+                Tempora provident repellendus earum, tenetur necessitatibus omnis, itaque vel consectetur, accusamus quasi totam? Obcaecati, consequuntur enim autem debitis exercitationem eveniet qui facilis earum numquam ipsa tenetur quaerat impedit hic maiores!
+                Laborum cum temporibus magnam recusandae ipsum quibusdam possimus illo fugit assumenda doloribus! Accusantium blanditiis, illum nihil recusandae modi deleniti dolor. Facere vel quis similique aut ab rem amet, nemo enim.
+                Assumenda beatae consequatur a sequi sint iure eveniet cupiditate, cumque labore cum, temporibus ad rerum ducimus sunt. Id minus laudantium, nesciunt, deleniti doloribus enim fugit, sapiente molestias voluptatem quod ipsum?
+                At quibusdam nemo velit recusandae suscipit ipsam laudantium quod dolorum repellendus laboriosam. Quis beatae, ab obcaecati deserunt labore enim earum nobis eum nisi sint laborum magnam aspernatur quam totam facilis.
+                Voluptate pariatur accusamus adipisci quam corporis sapiente magni aperiam, repellendus aliquid velit? Quis et velit consectetur libero. Sequi labore doloremque cumque animi molestias quibusdam tempore voluptates? Possimus a in atque.
+                Consequuntur placeat blanditiis numquam magni corrupti eveniet sunt ipsam eum, ratione quae molestiae distinctio officia ducimus omnis quod maiores voluptatibus similique repellat repudiandae inventore nesciunt perspiciatis praesentium recusandae ex. Beatae.
+                Laborum dolores voluptatum ullam explicabo? Iusto perferendis maxime harum alias, magni modi consequatur error debitis cumque dolore deleniti possimus, sit saepe voluptatem obcaecati voluptas ea veritatis beatae est exercitationem corporis?
+            </p>
+            <p class="odd-element">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus soluta ut provident eligendi natus quam fuga illo, dolorum nemo, architecto, perspiciatis quos totam doloribus dolor consectetur voluptatem! Autem, illo necessitatibus.
+                Quos architecto soluta esse est tenetur velit mollitia, sequi dolorum similique, ullam nam quas, eum recusandae quo labore ducimus voluptatum delectus autem natus iusto itaque unde! Repudiandae et aperiam libero!
+                Eius molestia;e vero dignissimos qui laudantium voluptates, magni facere? Ad minima ex, doloremque alias quis debitis cupiditate expedita vitae libero ipsum rerum, at minus! Tenetur aut nulla deleniti vitae rerum?
+                Cumque magni sit esse fugiat explicabo labore, repellat, voluptatem ea iusto iure minus soluta accusantium consequatur veritatis quo! Obcaecati cumque libero rem necessitatibus, eveniet reprehenderit voluptates nisi sed corrupti iste!
+                Tempore nihil animi similique? Corrupti, deleniti esse modi aliquid dolor quibusdam id nulla nisi similique, accusantium omnis aliquam voluptates amet asperiores et eveniet. Atque ipsa culpa pariatur quo similique nulla.
+            </p>
+            <div id="container">
+                HELLO
+            </div>
+            <button id="trial">Here</button>
+            </article>
+            <hr class="seperator vertical" />
+            <div class="trial" data="main.html">
+
+            </div>
             
-            <ul>
-                <li>Hello</li>
-                <li>Goodbye</li>
+        </main>
+    </div>
+    <div class="aside-wrapper">
+        <aside>
+            <p class="aside-p">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia quam illum amet similique placeat porro quidem qui. Voluptatem cum velit molestias eos, debitis, corporis illo, culpa quisquam maxime odit inventore.
+                Harum, explicabo corporis obcaecati dolorum quaerat esse nulla quis ad libero soluta corrupti impedit consectetur voluptatibus cumque ullam. Repudiandae veniam sequi libero quis a, accusantium ducimus! Consequuntur cumque nemo officiis!
+            </p>
+            <h3>About This Content</h3>
+            <ul class="aside-list">
+                <li><a class="aside-links" href="#">What is the source?</a></li>
+                <li><a class="aside-links" href="#">How can i learn?</a></li>
+                <li><a class="aside-links" href="#">Where can i learn?</a></li>
+                <li><a class="aside-links" href="#">What good is this subjejt to me?</a></li>
             </ul>
+            <hr />
         </aside>
-        <article>
-        <h2>So How Can I use It?</h2>            
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, corrupti ipsa laudantium facere saepe dicta magni omnis ad! Natus quas odit dolor incidunt inventore esse saepe culpa voluptate quo numquam.
-        Eveniet eaque voluptatum illum fuga ipsa, accusantium ullam eligendi sit ipsam commodi, atque sequi illo! Nisi quaerat possimus eveniet est ab consequuntur, consectetur consequatur officiis perferendis necessitatibus, dignissimos, eaque temporibus.
-        Maiores reiciendis at dolore quasi deleniti corrupti, harum velit repellat quo mollitia quos, nesciunt ab quis nihil fugiat labore aliquid error quam. Iusto, nisi dolor commodi quos sed quas. Quae.
-        Sint mollitia doloremque ducimus ratione magni labore quos ab fugiat voluptatibus, nihil aliquid, fugit repudiandae dignissimos! Blanditiis, officiis, dolorem similique tempora dignissimos pariatur consectetur iste voluptatum suscipit dolorum sed quasi!
-        Aliquam perferendis fuga temporibus architecto aut voluptatem, rem voluptatum sunt mollitia cumque! Illum excepturi totam fugiat molestiae unde eveniet accusantium? Aliquam aspernatur recusandae praesentium illum officiis et necessitatibus minus voluptatum.
-        Vitae laudantium, doloribus nostrum optio ipsa consequuntur, quas amet repudiandae impedit, praesentium assumenda voluptas quo nisi iure est beatae cumque totam blanditiis? Laborum ipsum consequatur officia eligendi reprehenderit. Quasi, ducimus.
-        Labore, facilis rerum nihil distinctio aliquam ut quis! Ratione praesentium voluptas dignissimos tempora. Alias tempore delectus impedit incidunt sequi molestias placeat consectetur aspernatur! Veritatis repellat tempora ab possimus modi officia?
-        Rem nesciunt molestias nisi quae dicta, iure quaerat fugit, quasi, culpa reiciendis sapiente aliquid dolore dolores veniam ab impedit temporibus adipisci sed expedita totam? Commodi quo quidem minus ipsum repudiandae.
-        Aperiam rem possimus libero ipsam inventore voluptates cupiditate, quibusdam pariatur sapiente saepe nam tempore aliquid, officiis delectus qui recusandae consequatur totam, natus odit in eum asperiores officia incidunt? Qui, asperiores.
-        Voluptatem voluptatibus quisquam beatae, voluptates laudantium odit cum, sapiente illo aspernatur, alias velit ducimus labore impedit. Delectus dolorem adipisci cumque est ducimus quisquam consectetur illum. Iste id odit animi suscipit.</p>
-        </article>
-        <aside id="a2">
-            <ul>
-                <li>Hello</li>
-                <li>Goodbye</li>
+        <aside>
+            <p class="aside-p">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia quam illum amet similique placeat porro quidem qui. Voluptatem cum velit molestias eos, debitis, corporis illo, culpa quisquam maxime odit inventore.
+                Harum, explicabo corporis obcaecati dolorum quaerat esse nulla quis ad libero soluta corrupti impedit consectetur voluptatibus cumque ullam. Repudiandae veniam sequi libero quis a, accusantium ducimus! Consequuntur cumque nemo officiis!
+            </p>
+            <h3>About This Content</h3>
+            <ul class="aside-list">
+                <li><a class="aside-links" href="#">What is the source?</a></li>
+                <li><a class="aside-links" href="#">How can i learn?</a></li>
+                <li><a class="aside-links" href="#">Where can i learn?</a></li>
+                <li><a class="aside-links" href="#">What good is this subjejt to me?</a></li>
             </ul>
+            <hr />
         </aside>
-    </main>
+        
+    </div>
+</div>
+    <hr class="seperator" />
     <footer>
+        <div class="footer-wrapper">
+            <div class="footer-logo-col-1">
+                <i class="fas fa-rocket" id="footer-main-logo"></i>
+            
+            <p>Professinal website</p>
+            <ul class="icon-list">
+                <li><a class="icon" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="icon"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#" class="icon"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#" class="icon"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://github.com/ZyixQQ" target="_blank" class="icon"><i class="fa fa-github"></i></a></li>
+            </ul>
+            </div>
+            <div class="footer-nav-col1">
+                <h2 class="footer-header">ZYIX</h2>
+                <ul class="footer-list">
+                    <li><a class="footer-nav-link" href="#">About</a></li>
+                    <li><a class="footer-nav-link" href="#">Blog</a></li>
+                    <li><a class="footer-nav-link" href="#">Careers</a></li>
+                    <li><a class="footer-nav-link" href="#">Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-col2">
+                <h2 class="footer-header">Support</h2>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-nav-link">Product help</a></li>
+                    <li><a href="#" class="footer-nav-link">Career help</a></li>
+                    <li><a href="#" class="footer-nav-link">Code help</a></li>
+                    <li><a href="#" class="footer-nav-link">Report an issue</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-col3">
+                <h2 class="footer-header">Our communities</h2>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-nav-link">ZYIX Community</a></li>
+                    <li><a href="#" class="footer-nav-link">ZYIX Forum</a></li>
+                    <li><a href="#" class="footer-nav-link">ZYIX Chat</a></li>
+                    <li><a href="#" class="footer-nav-link">ZYIX Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav-col4">
+                <h2 class="footer-header">Developers</h2>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-nav-link">Web Technologies</a></li>
+                    <li><a href="#" class="footer-nav-link">Web Development</a></li>
+                    <li><a href="#" class="footer-nav-link">ZYIX Plus</a></li>
+                    <li><a href="#" class="footer-nav-link">Hacks Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="license">
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus recusandae vel facere, magnam, eveniet aliquam aliquid doloribus repellat a veritatis eos unde tempora corrupti incidunt at pariatur ducimus blanditiis necessitatibus.</p>
+    </div>
     </footer>
+    
+    <script src="https://kit.fontawesome.com/077abc8f1d.js" crossorigin="anonymous"></script>
 </body>
 </html>
