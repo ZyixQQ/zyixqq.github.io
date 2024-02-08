@@ -1,0 +1,135 @@
+
+@font-face {
+    font-family: 'FlameBold';
+    src: url('fonts/FlameBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'FlameRegular';
+    src: url('fonts/FlameRegular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+:root {
+    --red: rgb(214, 35, 0);
+}
+
+
+
+body {
+    background: rgb(245, 235, 220);
+    color: rgb(80, 35, 20) !important;
+}
+
+.text-main {
+    color: rgb(80, 35, 20) !important;
+}
+
+.fixed-bottom li.active a {
+    color: var(--red) !important;
+}
+
+
+
+.fixed-bottom li.active i {
+    color: var(--red);
+}
+
+.fixed-bottom li {
+    cursor: pointer;
+}
+
+
+.bold {
+    font-family: 'FlameBold' !important;
+}
+
+.regular {
+    font-family: 'FlameRegular' !important;
+}
+.container {
+    max-width: 1200px !important;
+}
+
+
+.btn-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.show .btn-group {
+    max-width: unset;
+    
+}
+
+.show {
+    padding: 12px 5px !important;
+
+}
+
+
+@media screen and (min-width: 765px) {
+    .show {
+        width: 33.333%;
+        padding-right: 28px !important; padding-top: 48px !important; padding-bottom: 48px !important;
+    }
+
+    .show h1 {
+        font-size: 60px;
+    }    
+
+    .show .btn-group {
+        max-width: 300px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 965px) and (min-width: 765px) {
+    .container {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+
+    .show h1 {
+        font-size: 45px;
+    }
+
+    footer img {
+        width: 330px !important;
+        height: 354px !important;
+        bottom: 30px !important;
+    }
+}
+
+
+@media screen and (max-width: 765px) {
+    .footer-content {
+        width: 100% !important;
+    }
+}
+
+
+.card {
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 1px 2.22px;
+}
+
+
+
+
+
+
+.hoverable:hover {
+    background-color: var(--hover-color) !important;
+    cursor: pointer;
+}

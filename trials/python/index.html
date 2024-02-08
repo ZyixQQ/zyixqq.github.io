@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Python.org</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head> 
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-wrapper">
+                <ul class="content-list">
+                    <li id="python-link"><a href="#" class="content-list-item">Python</a></li>
+                    <li id="psf-link"><a href="#" class="content-list-item">PSF</a></li>
+                    <li id="docs-link"><a href="#" class="content-list-item" >Docs</a></li>
+                    <li id="pypi-link"><a href="#" class="content-list-item" >PyPI</a></li>
+                    <li id="jobs-link"><a href="#" class="content-list-item" >Jobs</a></li>
+                    <li id="community-link"><a href="#" class="content-list-item" >Community</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="head-section"> 
+            <div class="section-wrapper">
+                <div class="section-title">
+                    <h1 class="img-title">
+                        <a href="#">
+                            <img src="assets/python-logo.png" alt="">
+                        </a>
+                    </h1>
+
+                    <div class="search-section">
+                        <div class="donate-button">
+                            <a href="#">Donate</a>
+                        </div>
+                        <div class="form-wrapper">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-magnifying-glass"></i>
+                            </div>
+                            <form>
+                                <input type="search" placeholder="Search">
+                                <button type="submit">GO</button>
+                            </form>
+                            <div class="dropdown-button">
+                                <a href="#">Socialize</a>
+                                <ul class="dropdown">
+                                    <li class="dropdown-item">
+                                            <a class="dropdown-link" href="#">
+                                                <i class="fa-brands fa-facebook"></i> 
+                                                FaceBook
+                                            </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">
+                                            <i class="fa-brands fa-mastodon"></i>
+                                            Mastodon
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="dropdown-link" href="#">
+                                            <i class="fa-brands fa-twitter"></i>
+                                            Twitter
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        
+                                        <a class="dropdown-link" href="#">
+                                            <i class="fa-solid fa-comments"></i>
+                                            Chat on IRC
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="section-nav">
+                    <ul class="section-nav-list">
+                        <li class="section-nav-list-item">
+                            <a href="#" class="section-nav-link">About</a>
+                            <ul class="nav-hidden-dropdown">
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Applications</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Quotes</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Getting Started</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Help</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Python Brochure</a></li>
+                                <li class="hidden-dropdown-item special-item">
+                                    <h4 class="hidden-title">Python is a programming language that lets you work more quickly and integrate your systems more effectively.</h4>
+                                    <div class="hidden-text">You can learn to use Python and see almost immediate gains in productivity and lower maintenance costs.</div>
+                                    <div class="hidden-link">Learn more about Python.</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="section-nav-list-item">
+                            <a href="#" class="section-nav-link">Downloads</a>
+                            <ul class="nav-hidden-dropdown">
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">All releases</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Source code</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Windows</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">macOS</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Other Platforms</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">License</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Alternative Implementations</a></li>
+
+                                <li class="hidden-dropdown-item special-item">
+                                    <h4 class="hidden-title">Download for Windows</h4>
+                                    <a href="#" class="button">Python 3.12.1</a>
+                                    <div class="hidden-note">Note that Python 3.9+ <em>cannot</em> be used on Windows 7 or earlier.</div>
+                                    <div class="hidden-text">Not the OS you are looking for? Python can be used on many operating systems and environments.</div>
+                                    <div class="hidden-link">View the full list of downloads.</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="section-nav-list-item">
+                            <a href="#" class="section-nav-link">Documentation</a>
+                            <ul class="nav-hidden-dropdown">
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Docs</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Audio/Visual Talks</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Beginner's Guide</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Developer's Guide</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">FAQ</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Non-English Docs</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">PEP Index</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Python Books</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Python Essays</a></li>
+                                <li class="hidden-dropdown-item special-item">
+                                    <h4 class="hidden-title">Python’s standard documentation: download, browse or watch a tutorial.</h4>
+                                    <div class="hidden-text">Get started below, or visit the</div>
+                                    <div class="hidden-link">Documentation page to browse by version.</div>
+                                    <br>
+                                    <a href="#" class="button">Python Docs</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="section-nav-list-item">
+                            <a href="#" class="section-nav-link">Community</a>
+                            <ul class="nav-hidden-dropdown">
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Diversity</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Mailing lists</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">IRC</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Forums</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">PSF Annual Impact Report</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Python Conferences</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Special Interest Group</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Python logo</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Python Wiki</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Code of Conduct</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Community Awards</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Get Involved</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Shared Stories</a></li>
+                                <li class="hidden-dropdown-item special-item left">
+                                    <h4 class="hidden-title">The Python Community</h4>
+                                    <div class="hidden-text">Great software is supported by great people. Our user base is enthusiastic, dedicated to encouraging use of the language, and committed to being diverse and friendly.</div>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="section-nav-list-item">
+                            <a href="#" class="section-nav-link">Succes Stories</a>
+                            <ul class="nav-hidden-dropdown right-based">
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Arts</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Business</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Education</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Engineering</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Government</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Scientific</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Software Development</a></li>
+                                <li class="hidden-dropdown-item special-item left">
+                                    <blockquote class="hidden-suqqes-quote">
+                                        "Python is all about automating repetitive tasks, leaving more time for your other SEO efforts."
+                                    </blockquote>
+                                    <p class="quote-by"><cite>Marnix de Munck</cite>, <a href="#">Sooda internetbureau</a></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="section-nav-list-item">
+                            <a href="#" class="section-nav-link">News</a>
+                            
+                            <ul class="nav-hidden-dropdown right-based">
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Python News</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">PSF Newsletter</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">PSF News</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">PyCon US News</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">News from the community</a></li>
+                            </ul>
+                        </li>
+                        <li class="section-nav-list-item">
+                            <a href="#" class="section-nav-link">Events</a>
+                            <ul class="nav-hidden-dropdown right-based">
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Python Events</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">User Group Events</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Python Events Archive</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">User Group Events Archive</a></li>
+                                <li class="hidden-dropdown-item"><a href="#" class="hidden-dropdown-link">Submit an Event</a></li>
+                                <li class="hidden-dropdown-item special-item left">
+                                    <div class="hidden-text">Find events from the Python Community around the world!</div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-banner">
+                    <div class="dive-into-python">
+                        <ul class="slides-menu">
+                            <li class style="width: 100%;  margin-right: -100%; position: relative; display: list-item; min-height: 280px;">
+                                <div class="slide-code">
+                                    <pre>
+<code><span class="comment"># Python 3: Fibonacci series up to n</span>
+&gt;&gt;&gt; def fib(n):
+&gt;&gt;&gt;     a, b = 0, 1
+&gt;&gt;&gt;     while a &lt; n:
+&gt;&gt;&gt;         print(a, end=' ')
+&gt;&gt;&gt;         a, b = b, a+b
+&gt;&gt;&gt;     print()
+&gt;&gt;&gt; fib(1000)
+<span class="output">0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987</span></code>
+                                    </pre>
+                                </div>
+                                <div class="slide-copy">
+                                    <h2 class="slide-title">
+                                        Functions Defined
+                                    </h2>
+                                    <div class="slide-text">
+                                        The core of extensible programming is defining functions. Python allows mandatory and optional arguments, keyword arguments, and even arbitrary argument lists. <a href="#" class="slide-link">More about defining functions in Python 3</a>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class style="width: 100%;  margin-right: -100%; position: relative; display: none; min-height: 280px;">
+                                <div class="slide-code">
+                                    <pre><code><span class="comment"># Python 3: List comprehensions</span>
+&gt;&gt;&gt; fruits = ['Banana', 'Apple', 'Lime']
+&gt;&gt;&gt; loud_fruits = [fruit.upper() for fruit in fruits]
+&gt;&gt;&gt; print(loud_fruits)
+<span class="output">['BANANA', 'APPLE', 'LIME']</span>
+                                        
+<span class="comment"># List and the enumerate function</span>
+&gt;&gt;&gt; list(enumerate(fruits))
+<span class="output">[(0, 'Banana'), (1, 'Apple'), (2, 'Lime')]</span></code></pre>
+                                </div>
+                                <div class="slide-copy">
+                                    <div class="slide-title">Compound Data Types</div>
+                                    <div class="slide-text">Lists (known as arrays in other languages) are one of the compound data types that Python understands. Lists can be indexed, sliced and manipulated with other built-in functions. <a class="slide-link">More about lists in Python 3</a> </div>
+                                </div>
+    
+                            </li>
+                            <li class style="width: 100%;  margin-right: -100%; position: relative; display: none; min-height: 280px;">
+                                <div class="slide-code">
+                                    <pre><code><span class="comment"># Python 3: Simple arithmetic</span>
+&gt;&gt;&gt; 1 / 2
+<span class="output">0.5</span>
+&gt;&gt;&gt; 2 ** 3
+<span class="output">8</span>
+&gt;&gt;&gt; 17 / 3  <span class="comment"># classic division returns a float</span>
+<span class="output">5.666666666666667</span>
+&gt;&gt;&gt; 17 // 3  <span class="comment"># floor division</span>
+<span class="output">5</span></code></pre>
+                                </div>
+                                <div class="slide-copy">
+                                    <div class="slide-title">
+                                        Intuitive Interpretation
+                                    </div>
+                                    <div class="slide-text">Calculations are simple with Python, and expression syntax is straightforward: the operators <code>+</code>, <code>-</code>, <code>*</code> and <code>/</code> work as expected; parentheses <code>()</code> can be used for grouping. <a class="slide-link">More about simple math functions in Python 3.</a></div>
+                                </div>
+    
+                            </li>
+                            <li class style="width: 100%;  margin-right: -100%; position: relative; display: none; min-height: 280px;">
+                                <div class="slide-code">
+                                    <pre><code><span class="comment"># For loop on a list</span>
+&gt;&gt;&gt; numbers = [2, 4, 6, 8]
+&gt;&gt;&gt; product = 1
+&gt;&gt;&gt; for number in numbers:
+...    product = product * number
+... 
+&gt;&gt;&gt; print('The product is:', product)
+<span class="output">The product is: 384</span></code></pre>
+                                </div>
+                                <div class="slide-copy">
+                                    <div class="slide-title">All the Flow You’d Expect</div>
+                                    <div class="slide-text">Python knows the usual control flow statements that other languages speak — <code>if</code>, <code>for</code>, <code>while</code> and <code>range</code> — with some of its own twists, of course. <a class="slide-link">More control flow tools in Python 3</a></div>
+                                </div>
+    
+                            </li>
+                            <li class style="width: 100%;  margin-right: -100%; position: relative; display: none; min-height: 280px;">
+                                <div class="slide-code">
+                                    <pre><code><span class="comment"># Simple output (with Unicode)</span>
+&gt;&gt;&gt; print("Hello, I'm Python!")
+<span class="output">Hello, I'm Python!</span>
+<span class="comment"># Input, assignment</span>
+&gt;&gt;&gt; name = input('What is your name?\n')
+<span class="output">What is your name?
+Python</span>
+&gt;&gt;&gt; print(f'Hi, {name}.')
+<span class="output">Hi, Python.</span></code>
+                                        </pre>
+                                </div>
+                                <div class="slide-copy">
+                                    <div class="slide-title">Quick & Easy to Learn</div>
+                                    <div class="slide-text">Experienced programmers in any other language can pick up Python very quickly, and beginners find the clean syntax and indentation structure easy to learn. <div class="slide-link">Whet your appetite</div> with our Python 3 overview.</div>
+
+                                </div>
+    
+                            </li>
+                        </ul>
+                        <ol class="slide-control-nav">
+                            <li><a class="selected-number">1</a></li>
+                            <li><a class>2</a></li>
+                            <li><a class>3</a></li>
+                            <li><a class>4</a></li>
+                            <li><a class>5</a></li>
+                        </ol>
+                    </div>
+                </div>
+
+                <p>Python is a programming language that lets you work quickly <span class="breaker" style="width: 100%; height: 1px; display: block; line-height: 1px; font-size: 1px;"></span>
+                    and integrate systems more effectively. <a href="#" class="read-more">Learn More</a></p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="main-wrapper">
+            <div class="notification-bar">
+                Join the official Python Developers Survey 2023 and have a chance to win a prize <a href="#" class="button">Start the survey!</a>
+            </div>
+            <div class="row">
+                <ul class="row-list  four-item">
+                    <li class="small row-item">
+                        <div class="row-title">
+                            <i class="fa-solid fa-power-off"></i> Get Started
+                        </div>
+                        <div class="row-text">
+                            Whether you're new to programming or an experienced developer, it's easy to learn and use Python.
+                        </div>
+                        <div class="row-link">
+                            <a href="#">Start with our Beginner’s Guide</a>
+                        </div>
+                    </li>
+                    <li class="small row-item">
+                        <div class="row-title">
+                            <i class="fa-solid fa-download"></i> Download
+                        </div>
+                        <div class="row-text">
+                            Python source code and installers are available for download for all versions!
+                        </div>
+                        <div class="row-link">
+                            Latest: <a href="#">Python 3.12.1</a>
+                        </div>
+                    </li>
+                    <li class="small row-item">
+                        <div class="row-title">
+                            <i class="fa-solid fa-book"></i> Docs
+                        </div>
+                        <div class="row-text">
+                            Documentation for Python's standard library, along with tutorials and guides, are available online.
+                        </div>
+                        <div class="row-link">
+                            <a href="#">docs.python.org</a>
+                        </div>
+                    </li>
+                    <li class="small row-item">
+                        <div class="row-title">
+                            <i class="fa-solid fa-briefcase"></i> Jobs
+                        </div>
+                        <div class="row-text">
+                            Looking for work or have a Python related position that you're trying to hire for? Our <strong>relaunched</strong> <strong>community-run job board</strong> is the place to go.
+                        </div>
+                        <div class="row-link">
+                            <a href="#">jobs.python.org</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul class="row-list">
+                    <li class="medium row-item">
+                        <div class="row-title">
+                            <i class="fa-regular fa-newspaper"></i> Latest news <a class="more">>>> More</a>
+                        </div>
+                        <ul class="row-date-list">
+                            <li class="row-date-item">
+                                <time class="date">2024-01-12</time> <a href="#" class="row-date-link">EU’s Cyber Resilience Act Passes with Wins for Open Source</a>
+                            </li>
+                            <li class="row-date-item">
+                                <time class="date">2023-12-15</time> <a href="#" class="row-date-link">Python Software Foundation - December 2023 Newsletter</a>
+                            </li>
+                            <li class="row-date-item">
+                                <time class="date">2023-12-12</time> <a href="#" class="row-date-link">Announcing the Hidden Figures of Python Podcast!</a>
+                            </li>
+                            <li class="row-date-item">
+                                <time class="date">2023-12-10</time> <a href="#" class="row-date-link">Python 3.11.7 is now available</a>
+                            </li>
+                            <li class="row-date-item">
+                                <time class="date">2023-12-08</time> <a href="#" class="row-date-link">Python 3.12.1 is now available</a>
+                            </li>
+                        </ul>   
+                    </li>
+                    <li class="medium row-item">
+                        <div class="row-title">
+                            <i class="fa-regular fa-calendar-days"></i> Upcoming Events <a href="#" class="more">>>> More</a>
+                        </div>
+                        <ul class="row-date-list">
+                            <li class="row-date-item">
+                                <time class="date">2024-01-17</time>    <a href="#" class="row-date-link">Python Meeting Düsseldorf</a>
+                            </li>
+                            <li class="row-date-item">
+                                <time class="date">2024-01-25</time>    <a href="#" class="row-date-link">PyLadies Amsterdam: An introduction to conformal prediction</a>
+                            </li>
+                            <li class="row-date-item">
+                                <time class="date">2024-02-04</time>    <a href="#" class="row-date-link">Python Devroom @ FOSDEM 2024</a>
+                            </li>
+                            <li class="row-date-item">
+                                <time class="date">2024-02-04</time>    <a href="#" class="row-date-link">FOSDEM 2024: Python Devroom</a>
+                            </li>
+                            <li class="row-date-item">
+                                <time class="date">2024-02-24</time>    <a href="#" class="row-date-link">Django Girls Ho</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul class="row-list">
+                    <li class="medium row-item">
+                        <div class="row-title">
+                            <i class="fa-solid fa-circle-dollar-to-slot"></i> Succes Stories <a href="#" class="more">>>> More</a>
+                        </div>
+                        <div class="row-quote">
+                            <em>"Python is all about automating repetitive tasks, leaving more time for your other SEO efforts."</em>
+                        </div>
+                        <div class="row-link" style="border-radius: 6px; font-size: .85em; padding: .8em .8em;   background-color: #f6f6f6;">
+                            <a href="#">Using Python scripts to analyse SEO and broken links on your site</a> by Marnix de Munck
+                        </div>
+                    </li>
+                    <li class="medium row-item">
+                        <div class="row-title">
+                            <i class="fa-brands fa-python"></i> Use Python for... <a href="#" class="more">>>> More</a>
+                        </div>
+                        <ul class="row-link-list">
+                            <li class="row-link-item">
+                                <b>Web Development</b>: 
+                                <span class="tag-wrapper">
+                                    <a href="#" class="tag">Django</a>,
+                                    <a href="#" class="tag">Pyramid</a>,    
+                                    <a href="#" class="tag">Bottle</a>,   
+                                    <a href="#" class="tag">Tornado</a>,    
+                                    <a href="#" class="tag">Flask</a>,    
+                                    <a href="#" class="tag">web2py</a>
+                                </span>
+                            </li>
+                            <li class="row-link-item">
+                                <b>GUI Development</b>:
+                                <span class="tag-wrapper">
+                                    <a href="#" class="tag">tkinter</a>,
+                                    <a href="#" class="tag">PyGObject</a>,
+                                    <a href="#" class="tag">PyQt</a>,
+                                    <a href="#" class="tag">PySide</a>,
+                                    <a href="#" class="tag">Kivy</a>,
+                                    <a href="#" class="tag">wxPython</a>
+                                </span>
+                            </li>
+                            <li class="row-link-item">
+                                <b>Scientific and Numeric</b>:
+                                <span class="tag-wrapper">
+                                    <a href="#" class="tag">SciPy</a>,
+                                    <a href="#" class="tag">Pandas</a>,
+                                    <a href="#" class="tag">IPython</a>
+                                </span>
+                            </li>
+                            <li class="row-link-item">
+                                <b>Software Development</b>:
+                                <span class="tag-wrapper">
+                                    <a href="#" class="tag">Buildbot</a>,
+                                    <a href="#" class="tag">Trac</a>,
+                                    <a href="#" class="tag">Roundup</a>
+                                </span>
+                            </li>
+                            <li class="row-link-item">
+                                <b>System Administration</b>:
+                                <span class="tag-wrapper">
+                                    <a href="#" class="tag">Ansible</a>,
+                                    <a href="#" class="tag">Salt</a>,
+                                    <a href="#" class="tag">OpenStack</a>,
+                                    <a href="#" class="tag">xonsh</a>
+                                </span>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pep-widget">
+                <h2 class="widget-title">
+                    <span class="prompt">>>></span>
+                    <a href="#">Python Enhancement Proposals</a>
+                    : The Future Python
+                    <span class="rss-link">
+                        <i class="fa-solid fa-wifi"></i> <a href="#">RSS</a>
+                    </span>
+                </h2>
+            </div>
+
+            <div class="psf-widget">
+                <h2 style="font-weight: 400;" class="psf-title">
+                    <span class="prompt">>>></span>
+                    <a href="#">Python Software Foundation</a>
+                </h2>
+                <div class="psf-text">
+                    The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers. <a href="#" class="more">Learn More</a>
+                </div>
+                <div class="psf-buttons">
+                    <a href="#" class="button">Become a Member</a> <a href="#" class="button">Donate to the PSF</a>
+                </div>
+                <div class="python-logo">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <ul class="footer-list">
+                <li class="footer-col-1">
+                    <a href="#" class="footer-title">About</a>
+                    <ul class="footer-link-list">
+                        <li class="footer-link-item">
+                            Applications
+                        </li>
+                        <li class="footer-link-item">
+                            Quotes
+                        </li>
+                        <li class="footer-link-item">
+                            Getting Started
+                        </li>
+                        <li class="footer-link-item">
+                            Help
+                        </li>
+                        <li class="footer-link-item">
+                            Python Brochure
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-col-2">
+                    <a href="#" class="footer-title">Downloads</a>
+                    <ul class="footer-link-list">
+                        <li class="footer-link-item">
+                            All Releases
+                        </li>
+                        <li class="footer-link-item">
+                            Source Code
+                        </li>
+                        <li class="footer-link-item">
+                            Windows
+                        </li>
+                        <li class="footer-link-item">
+                            macOS
+                        </li>
+                        <li class="footer-link-item">
+                            Other Platforms
+                        </li>
+                        <li class="footer-link-item">
+                            License
+                        </li>
+                        <li class="footer-link-item">
+                            Alternative Implementations
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-col-3">
+                    <a href="#" class="footer-title">Documentation</a>
+                    <ul class="footer-link-list">
+                        <li class="footer-link-item">Docs</li>
+                        <li class="footer-link-item">Audio/Visual Talks</li>
+                        <li class="footer-link-item">Beginner’s Guide</li>
+                        <li class="footer-link-item">FAQ</li>
+                        <li class="footer-link-item">Non-English Docs</li>
+                        <li class="footer-link-item">PEP Index</li>
+                        <li class="footer-link-item">Python Books</li>
+                        <li class="footer-link-item">Python Essays</li>
+                    </ul>
+                </li>
+                <li class="footer-col-4">
+                    <a href="#" class="footer-title">Community</a>
+                    <ul class="footer-link-list">
+                        <li class="footer-link-item">Diversity</li>
+                        <li class="footer-link-item">Mailing Lists</li>
+                        <li class="footer-link-item">IRC</li>
+                        <li class="footer-link-item">Forums</li>
+                        <li class="footer-link-item">PSF Annual Impact Report</li>
+                        <li class="footer-link-item">Python Conferences</li>
+                        <li class="footer-link-item">Special Interest Group</li>
+                        <li class="footer-link-item">Python Logo</li>
+                        <li class="footer-link-item">Python Wiki</li>
+                        <li class="footer-link-item">Code of Conduct</li>
+                        <li class="footer-link-item">Community Awards</li>
+                        <li class="footer-link-item">Get Invalid</li>
+                        <li class="footer-link-item">Shared Stories</li>
+                    </ul>
+                </li>
+                <li class="footer-col-5">
+                    <a href="#" class="footer-title">Succes Stories</a>
+                    <ul class="footer-link-list">
+                        <li class="footer-link-item">Arts</li>
+                        <li class="footer-link-item">Business</li>
+                        <li class="footer-link-item">Education</li>
+                        <li class="footer-link-item">Engineering</li>
+                        <li class="footer-link-item">Government</li>
+                        <li class="footer-link-item">Scientific</li>
+                        <li class="footer-link-item">Software Development</li>
+                    </ul>
+                </li>
+                <li class="footer-col-6">
+                    <a href="#" class="footer-title">News</a>
+                    <ul class="footer-link-list">
+                        <li class="footer-link-item">Python News</li>
+                        <li class="footer-link-item">PSF Newsletter</li>
+                        <li class="footer-link-item">PSF News</li>
+                        <li class="footer-link-item">PyCon US News</li>
+                        <li class="footer-link-item">News from the community</li>
+                    </ul>
+                </li>
+
+                <li class="footer-col-7">
+                    <a href="#" class="footer-title">Events</a>
+                    <ul class="footer-link-list">
+                        <li class="footer-link-item">Python Events</li>
+                        <li class="footer-link-item">User Group Events</li>
+                        <li class="footer-link-item">Python Events Archive</li>
+                        <li class="footer-link-item">User Group Events Archive</li>
+                        <li class="footer-link-item">Submit an Event</li>
+                    </ul>
+                </li>
+                
+                <li class="footer-col-8">
+                    <a href="#" class="footer-title">Contributing</a>
+                    <ul class="footer-link-list">
+                        <li class="footer-link-item">Developer's Guide</li>
+                        <li class="footer-link-item">Issue Tracker</li>
+                        <li class="footer-link-item">python-dev list</li>
+                        <li class="footer-link-item">Core Mentorship</li>
+                        <li class="footer-link-item">Report a Security Issue</li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            
+
+        
+    </footer>
+
+
+    <div class="licance">
+        <ul class="link-list">
+            <li><a class="link" href="#">Help & General Contact</a></li>
+            <li><a class="link" href="#">Diversity Initiatives</a></li>
+            <li><a class="link" href="#">Submit Website Bug</a></li>
+            <li><a class="link" href="#">Status </a></li>
+        </ul>
+        <div class="copyright">
+            Copyright ©2001-2024  <a href="#">Python Software Foundation</a>  <a href="#">Legal Statements</a>  <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/077abc8f1d.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
